@@ -4,14 +4,14 @@ Python implementations of the sort of six-bit, two-tap, XNOR-based polynomial co
 
 `tia_counter.py` defines two classes:
 
-* TiaCounterV1 - Represents the register bits internally as a list of boolean values, manipulated "manually" using standard boolean operators
-* TiaCounterV2 - Stores register contents in a single integer variable, manipulated using bit-wise operators
+* **TiaCounterV1** - Represents the register bits internally as a list of boolean values, manipulated "manually" using standard boolean operators
+* **TiaCounterV2** - Stores register contents in a single integer variable, manipulated using bit-wise operators
 
 V2 is closer in spirit to how the TIA chip actually works, but V1 might be a bit more intuitive to understand.
 
 `tia_counter_demo.py` demonstrates instantiating both classes and cycling through all their possible states. The output (reproduced below) shows that their states are identical to each other at each period. 
 
-The states also match the states produced by the real TIA counter circuits, as outlined in Andrew Towers' [Atari 2600 TIA Hardware Notes](http://www.bjars.com/resources/tia_hw_notes.txt).
+Note that the states are identical to those produced by the real TIA counter circuits, as outlined in Andrew Towers' [Atari 2600 TIA Hardware Notes](http://www.bjars.com/resources/tia_hw_notes.txt).
 
 
 
