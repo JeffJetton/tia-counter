@@ -11,7 +11,7 @@ V2 is closer in spirit to how the TIA chip actually works, but V1 might be a bit
 
 `tia_counter_demo.py` demonstrates instantiating both classes and cycling through all their possible states. The output (reproduced below) shows that their states are identical to each other at each period. 
 
-Note that the states are identical to those produced by the real TIA counter circuits, as outlined in Andrew Towers' [Atari 2600 TIA Hardware Notes](http://www.bjars.com/resources/tia_hw_notes.txt).
+Note that the states are also identical to those produced by the real TIA counter circuits, as outlined in Andrew Towers' [Atari 2600 TIA Hardware Notes](http://www.bjars.com/resources/tia_hw_notes.txt).
 
 
 
