@@ -1,6 +1,6 @@
 ###############################################################################
 #
-#   tia_lsfr.py
+#   tia_counter.py
 #
 #   Python implementations of the six-bit polynomial counter (linear
 #   feedback shift register) used in several places within the Atari
@@ -8,7 +8,7 @@
 #
 #   Two "register" classes are defined: One represents the register
 #   bits as a list of boolean values, manipulated "manually". The
-#   other simply stores a single variable and uses Python's built-in
+#   other simply stores a single integer and uses Python's built-in
 #   bitwise operators to manipulate it. Externally, the two classes
 #   work the same way (as the demonstration code shows).
 #
@@ -36,8 +36,8 @@ class TiaCounterV1:
     
     The initial "seed" value can be specified on instantiation, or
     it can be left to default to zero. Setting the seed to the
-    "illegal" state (all 1 bits, or 63) or a value larger than
-    the bit width is not allowed.
+    "illegal" state (all 1 bits, or 63 for a six-bit register)
+    or a value larger than the bit width is not allowed.
     '''
     
     
